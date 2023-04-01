@@ -1,0 +1,210 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    /* background-color: rgb(255, 255, 255); */
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7))url("C:\Users\student\Downloads\college.jpg");
+}
+
+.container{
+    display: block;
+    /* background-color: rgb(255, 255, 255);    */
+}
+#user_logo{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+}
+#chat-box{
+    display: inline-block;
+    background: rgb(167, 56, 56);
+    position: relative;
+    overflow: hidden;
+    width: 450px;
+    height: 600px;
+    border-radius: 15px;
+    margin: 30px;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    box-shadow: 0 0 10px;
+}
+.chat-header{
+    display: flex;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    padding: 10px;
+    /* color: #000000; */
+    
+}
+.chat-header h2{
+    color: rgb(255, 255, 255);
+}
+.chat-header p{
+    color: rgb(3, 255, 79);
+    font-size: 19px;
+    
+
+}
+.chat-header img{
+    width: 48px;
+    border-radius: 50%;
+    height: 48px;
+    padding: 8px;
+}
+
+.chat-msg{
+    display: inline-block;
+    color: rgb(8, 8, 8);
+    overflow-y: scroll;
+    background: rgb(219, 215, 215);
+    height: 100%;
+}
+.my-chat p{
+    padding-right: 10px;
+}
+
+.my-chat{
+    display: grid;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: 400;
+    margin: 8px;
+    align-items: right;
+    justify-content:right;
+    float:right;
+    background: rgba(147, 212, 167,0.5);
+    border-radius: 13px 13px 0px 13px;
+    width: fit-content;
+    
+    box-shadow: 0 0 5px;
+}
+.my-chat img{
+    border-radius: 50%;
+}
+.bot-chat{
+    display: grid;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: 400;
+    margin: 8px;
+    align-items: right;
+    justify-content: right;
+    background: rgb(255, 255, 255);
+    border-radius: 13px 13px 13px 0px;
+    width: fit-content;
+    
+    box-shadow: 0 0 5px;
+}
+.bot-chat p{
+    padding-left: 10px;
+}
+/* onsend button */
+
+.send-but{
+    display: block;
+    color:rgb(248, 248, 248);
+    padding: 8px 10px; 
+    background: rgb(219, 219, 219);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    
+}
+
+
+
+#chat-input{
+    font-size: 20px;
+    background: white;
+    border-radius: 14px;
+    padding: 10px 10px;
+    color: rgb(33, 33, 36);
+    border: none;
+    width: 73%;
+
+}
+
+.SendBut{
+    font-size: 20px;
+    padding: 4px 10px;
+    margin-left: 10px;
+    border-radius: 20px;
+    border: none;
+    font-weight: 500;
+    color: rgb(248, 248, 248);
+    background: rgb(10, 10, 10);
+}
+
+
+.chat-btn{
+    display: block;
+}
+#chatbtn{
+    font-size: 20px;
+    padding: 5px;
+    color: white;
+    background-color: rgb(103, 231, 103);
+    border-radius: 10px 10px 0px 10px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    border: 0;
+}
+
+
+/* chat box window css*/
+
+/* .chat-box{
+    display: inline-block;
+    overflow: hidden;s
+    position: relative;
+    background: red;
+    height: 600px;
+    width: 450px;
+    border-radius: 20px;
+} */
+/*  chat bot header nam and info */
+/* 
+.chat-header{
+    display: block;
+    background: blue;
+    align-items: center;
+
+}
+.chat-header h1{
+    color: white;
+    background-color: blue;
+    padding-left: 10px;
+    font-size: 23px;
+}
+.chat-header p{
+    color: green;
+    padding-left: 10px;
+}
+
+
+.chat-msg{
+    display:inline-block ;
+    background: white;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.send-but{
+    display: inline-block;
+    overflow: hidden;
+    position: absolute;
+    color: black;
+    background: palegreen;
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    bottom: 0px;
+    margin: 10px;
+    padding: 10px;
+} */ 

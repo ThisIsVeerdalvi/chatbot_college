@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission chatbot project</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style2.css')}}">
+</head>
+
+<body>
+    <div class="container">
+        <div id="chat-box">
+
+            <div class="chat-header">
+                <img src="static\Logo.png" alt="">
+                <div class="data">
+                    <h2> HackingParadox</h2>
+                    <p>online</p>
+                </div>
+            </div>
+
+            <div class="chat-msg">
+                
+                <div class="my-chat">
+                    <p>Hi what is your name</p>
+<!--                    <img id="user_logo" src="static\user.jpg" alt="">-->
+                </div>
+                
+                <div class="bot-chat">
+<!--                    <img id="user_logo" src="static\logo.png" alt="">-->
+                    <p>Hello, I am Siri an Admission bot, I will help to solve your query</p>
+                </div>
+            </div>
+            <div class="send-but">
+                <input id="chat-input" type="text" name="chat-input" placeholder="Enter your message ">
+                <button class="SendBut">Send</button>
+            </div>
+        </div>
+        <div class="chat-btn">
+            <button id="chatbtn">Click Me</button>
+        </div>
+    </div>
+</body>
+<script src="static\script2.js"></script>
+<script>
+    let togglebut = document.getElementById("chatbtn");
+
+    let state = false;
+    togglebut.addEventListener('click', () => toggleBut());
+
+    function toggleBut() {
+        state = !state;
+        // alert("function called");
+        if (state) {
+            document.querySelector('#chat-box').style.opacity = 1;
+
+        } else {
+            document.querySelector('#chat-box').style.opacity = 0;
+        }
+
+    }
+
+</script>
+
+</html>
